@@ -42,7 +42,7 @@ fun main() {
 
 }
 
-class Person(var id: String,
+data class Person(var id: String,   //data 클래스는 override fun toString을 대체한다. (단순한 클래스일때만)
              var sex: String,
              var age: Int ,
              var city: String ) {
@@ -57,9 +57,9 @@ class Person(var id: String,
         return "안녕하세요! 저는 $id 입니다. ${age}살 $sex 이고 $city 에 살고있습니다."
     }
 
-    override fun toString(): String {        // << 코드를 간단하게 하기 !!
-        return "id: $id, sex: $sex, age: $age, city: $city "
-    }
+    /*override fun toString(): String {        // << 코드를 간단하게 하기 !!
+        return "id: $id, sex: $sex, age: $age, city: $city " */
+
 
 
 }

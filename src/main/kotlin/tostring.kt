@@ -1,4 +1,4 @@
-fun main(){
+fun main() {
     val article1 = Article1()
     article1.id = "김도규"
     article1.age = 30
@@ -28,13 +28,13 @@ fun main(){
 
 }
 
-class Article1{
+class Article1 {
     var id: String = ""
     var sex: String = ""
     var age: Int = 0
-    var city : String = ""
+    var city: String = ""
 
-    fun introduceMsg(): String{
+    fun introduceMsg(): String { // = "안녕하세요! 저는 $id 입니다. ${age}살이고 $city 에 살고있습니다." 한줄일때.
         return "안녕하세요! 저는 $id 입니다. ${age}살이고 $city 에 살고있습니다."
     }
 
